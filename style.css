@@ -32,7 +32,7 @@ h3{
 
 .left {
   width: 50vw;
-  height: 90vh;
+  height: 95vh;
   text-align: center;
   background-image:url('4.jpg');
   background-size: cover;
@@ -55,7 +55,7 @@ h3{
 
 .right {
   width: 50vw;
-  height: 90vh;
+  height: 95vh;
   margin: 0;
   padding: 1.5em 1em 1em 2em;
   display: flex;
@@ -71,6 +71,7 @@ h3{
   width: 17em;
   border-radius: 5px;
   border-style: none;
+  background-color: none;
 }
 
 .input1{
@@ -78,6 +79,7 @@ h3{
   width: 26em;
   border-radius: 5px;
   border-style: none;
+  background-color: none;
 }
 
 input[type=button]{
@@ -85,6 +87,7 @@ input[type=button]{
   height: 2em;
   border-radius: 10px;
   color: rgba(228, 130, 15, 1);
+  background-color: none;
   font-size: 1.2em;
   font-weight: 600;
   text-align: center;
@@ -107,6 +110,7 @@ input[type=submit] {
   text-align: center;
   padding-left: 0;
   margin-bottom: 0;
+  background-color: none;
 
 }
 
