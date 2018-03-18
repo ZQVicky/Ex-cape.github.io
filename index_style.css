@@ -10,7 +10,7 @@ body{
 header {
   color: rgba(228, 130, 15, 1);
   font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 35px;
+  font-size: 40px;
   padding-left: 3em;
   margin-bottom: 0.7em;
   height: 100px;
@@ -36,6 +36,7 @@ h6{
   grid-gap: 15px;
   grid-auto-rows: minmax(150px, auto);
   grid-auto-columns:270px;
+  font-weight:400;
 }
 
 .box{
