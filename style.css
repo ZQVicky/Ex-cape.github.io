@@ -182,13 +182,14 @@ input[type=date]{
 
 #video {
   margin-top: 1em;
-width: 1000px;
-height: auto;
-padding: 0;
+  width: 1000px;
+  height: 500px;
+  padding: 0;
 }
 
 .div_butt{
   display: flex;
   flex-direction: row;
-justify-content: center;
+  justify-content: center;
+
 }
