@@ -1,4 +1,4 @@
-Qfast.add('widgets', { path: "http://hovertree.com/texiao/js/1/js/terminator2.2.min.js", type: "js", requires: ['fx'] });
+Qfast.add('widgets', { path: "https://hovertree.com/texiao/js/1/js/terminator2.2.min.js", type: "js", requires: ['fx'] });
 Qfast(false, 'widgets', function () {
     K.tabs({
         id: 'decoroll2', //焦点图包裹id
