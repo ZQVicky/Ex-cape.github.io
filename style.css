@@ -1,14 +1,17 @@
+
+/*     form page     */
+
 body {
   margin: 0;
-  background-image:url('1.jpg');
-  background-position:center;
+  background-image:url('img/4.jpg');
+  background-position:top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
 header {
-  color: rgba(228, 130, 15, 1);
+  color: rgba(228, 117, 15, 1);
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 18px;
   padding-left: 3em;
@@ -27,38 +30,29 @@ h3{
   font-size: 1.5em
 }
 .main {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-
+  display: grid;
+  grid-gap: 15px;
+  grid-auto-rows: minmax(150px, auto);
+  grid-auto-columns:260px;
+  margin: 3em;
 }
 
-.left {
-  width: 50vw;
-  height: 100vh;
-  text-align: center;
-  background-image:url('4.jpg');
-  background-size: cover;
-  background-position: bottom;
-
-  margin: 0;
-}
-
-.right h1 {
-  font-size: 2em;
+.container h1 {
+  font-size: 3em;
   color:rgb(228, 130, 15);
   margin-top: 0.2em;
   margin-bottom: 0.6em;
-  padding-top: 0;
+  padding-top: 0.1em;
   padding-left: 0;
   text-align: center;
   border: dotted;
   border-radius: 15px;
 }
 
-.right {
-  width: 50vw;
-  height: 100vh;
+
+.container {
+  grid-column: 2/5;
+  grid-row: 1/5;
   margin: 0;
   padding: 1.5em 1em 1em 2em;
   display: flex;
@@ -66,7 +60,7 @@ h3{
   align-content: space-between;
   box-sizing: border-box;
   line-height: 250%;
-  background-color: rgba(220, 239, 246, 0.79)
+  background-color: rgba(220, 239, 246, 0.5)
 }
 
 .input{
@@ -176,4 +170,25 @@ input[type=date]{
   padding-top: 2em;
   padding-left: 3em;
 
+}
+.section{
+  display: flex;
+  flex-direction: column;
+}
+
+.video_box{
+  align-self: center;
+}
+
+#video {
+  margin-top: 1em;
+width: 1000px;
+height: auto;
+padding: 0;
+}
+
+.div_butt{
+  display: flex;
+  flex-direction: row;
+justify-content: center;
 }

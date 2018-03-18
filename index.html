@@ -1,50 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Tell us about you</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link href="scroll.css" type="text/css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="http://hovertree.com/texiao/js/1/css/style.css"> -->
+    <script type="text/javascript" src="http://hovertree.com/texiao/js/1/js/koala.min.1.5.js"></script>
+    <script type="text/javascript">
+        Qfast.add('widgets', { path: "http://hovertree.com/texiao/js/1/js/terminator2.2.min.js", type: "js", requires: ['fx'] });
+        Qfast(false, 'widgets', function () {
+            K.tabs({
+                id: 'decoroll2', //焦点图包裹id
+                conId: "decoimg_a2", //大图域包裹id
+                tabId: "deconum2", //小圆点数字提示id
+                tabTn: "a",
+                conCn: '.decoimg_b2', //大图域配置class
+                auto: 1, //自动播放 1或0
+                effect: 'fade', //效果配置
+                eType: 'mouseover', // 鼠标事件
+                pageBt: true, //是否有按钮切换页码
+                bns: ['.prev', '.next'], //前后按钮配置class
+                interval: 3000// 停顿时间
+            })
+        })
+    </script>
+    <title>Main page</title>
   </head>
   <body>
-    <header id="head">
-      <h2>Ex-cape</h2>
-      <h3>Your personal travel tailor, with a blend of love.</h3>
+    <header>
+      <h1>Ex-cape</h1><h6>Your personal travel tailor, with a blend of love.</h6>
     </header>
-    <div class="main">
-      <section class="left">
-      </section>
-      <section class="right">
-        <h1>TELL US ABOUT YOU</h1>
-          <div class="name">
-            <label for="">First name:
-              <br>* &nbsp<input class="input" type="text" name="firstname">
-            </label>
-            <label for="">Last name:
-              <br>* &nbsp<input class="input" type="text" name="lastname">
-            </label>
+    <div class="wrapper">
+      <div id="decoroll2" class="imgfocus box">
+          <div id="decoimg_a2" class="imgbox">
+              <div class="decoimg_b2">
+                <img class="img" src="img/spring.jpg">
+              </div>
+              <div class="decoimg_b2">
+                <img class="img" src="img/summer.jpg">
+              </div>
+              <div class="decoimg_b2">
+                <img class="img" src="img/autumn.jpg">
+              </div>
+              <div class="decoimg_b2">
+                <img class="img" src="img/winter.jpg">
+              </div>
           </div>
-          <div class="gen">
-            <label for="">Gender: &nbsp<br>&nbsp&nbsp&nbsp
-              <input  type="radio" name="sex" value="Male"> Male  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-              <input  type="radio" name="sex" value="Female" checked="checked">Female
-            </label>
-          </div>
-          <div>
-            <label for="">Age:
-            <br>&nbsp&nbsp&nbsp* &nbsp<input class="input" type="text" name="lastname">
-            </label>
-          </div>
-          <div>
-            <label for="">E-mail address:
-            <br>&nbsp&nbsp&nbsp* &nbsp<input class="input1" type="text" name="lastname">
-            </label>
-          </div>
-          <div class="but">
-            <input type="button" value="Electronic Butler">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <a href="page2.html"><input type="button" value="next"></a>
-          </div>
-      </section>
-
+          <ul id="deconum2" class="num_a2">
+              <li><a href="javascript:void(0)" hidefocus="true" target="_self">Spring</a></li>
+              <li><a href="javascript:void(0)" hidefocus="true" target="_self">Summer</a></a></li>
+              <li><a href="javascript:void(0)" hidefocus="true" target="_self">Autumn</a></li>
+              <li><a href="javascript:void(0)" hidefocus="true" target="_self">Winter</a></li>
+          </ul>
+      </div>
+      <a class="box two button--aylen">Deals</a>
+      <a class="box three button--aylen" href="form.html">Register</a>
+      <a class="box four button--aylen" href="butler.html">Butler</a>
+      <a class="box five button--aylen">Community</a>
+      <a class="box six button--aylen">About us</a>
     </div>
 
   </body>

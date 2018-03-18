@@ -1,0 +1,214 @@
+/*     main page    */
+body{
+  background-image: url('img/6.png');
+  background-size: cover;
+  background-position: top;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+header {
+  color: rgba(228, 130, 15, 1);
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 40px;
+  padding-left: 3em;
+  margin-bottom: 0.7em;
+  height: 100px;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+h1{
+  margin-top:0;
+  margin-bottom: 0;
+  padding: 0;
+}
+h6{
+  padding-top: 60px;
+  padding-right: 60px;
+  margin: 0
+
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 15px;
+  grid-auto-rows: minmax(150px, auto);
+  grid-auto-columns:270px;
+}
+
+.box{
+  border-radius: 10px;
+  font-size: 2em;
+}
+
+
+.two {
+  grid-column: 5;
+  grid-row: 1;
+  text-decoration: none;
+  font-size: 4em;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(237, 147, 32)
+}
+
+.two.button--aylen {
+	color: #37474f;
+	overflow: hidden;
+	transition: color 0.3s;
+}
+.two.button--aylen::before {
+	background:rgb(230, 140, 25);
+}
+.two.button--aylen::after {
+	background: rgb(203, 119, 32);
+}
+.two.button--aylen:hover {
+	color: #fff;
+}
+
+.three {
+  grid-column: 4;
+  grid-row: 2;
+  text-decoration: none;
+  font-size: 5em;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(152, 187, 136)
+}
+
+/* Aylen */
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+.three.button--aylen {
+	color: #37474f;
+	overflow: hidden;
+	transition: color 0.3s;
+}
+
+.button--aylen::before,
+.button--aylen::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 100%;
+	left: 0;
+	z-index: -1;
+	transition: transform 0.4s;
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.three.button--aylen::before {
+	background:rgb(135, 168, 121);
+}
+.three.button--aylen::after {
+	background: rgb(121, 152, 108);
+}
+.three.button--aylen:hover {
+	color: #fff;
+}
+.button--aylen:hover::before,
+.button--aylen:hover::after {
+	transform: translate3d(0, 100%, 0);
+}
+.button--aylen:hover::after {
+	-webkit-transition-delay: 0.175s;
+	transition-delay: 0.175s;
+}
+
+/* Shikoba */
+
+.four {
+  grid-column: 5;
+  grid-row: 3;
+  text-decoration: none;
+  font-size: 5em;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  background-color:rgb(182, 218, 60)
+}
+
+.four.button--aylen {
+	color: #37474f;
+	overflow: hidden;
+	transition: color 0.3s;
+}
+.four.button--aylen::before {
+	background:rgb(174, 203, 38);
+}
+.four.button--aylen::after {
+	background: rgb(155, 181, 32);
+}
+.four.button--aylen:hover {
+	color: #fff;
+}
+
+
+.five {
+  grid-column: 2;
+  grid-row: 4;
+  text-decoration: none;
+  font-size: 4em;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(51, 74, 149);
+}
+.five.button--aylen {
+	color: #1a2125;
+	overflow: hidden;
+	transition: color 0.3s;
+}
+.five.button--aylen::before {
+	background:rgb(46, 66, 134);
+}
+.five.button--aylen::after {
+	background: rgb(39, 59, 121);
+}
+.five.button--aylen:hover {
+	color: #fff;
+}
+
+
+.six {
+  grid-column: 4;
+  grid-row: 4;
+  text-decoration: none;
+  font-size: 5em;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(90, 89, 105)
+}
+
+.six.button--aylen {
+	color: #1a2125;
+	overflow: hidden;
+	transition: color 0.3s;
+}
+.six.button--aylen::before {
+	background:rgb(82, 81, 99);
+}
+.six.button--aylen::after {
+	background: rgb(75, 74, 91);
+}
+.six.button--aylen:hover {
+	color: #fff;
+}
+/* hide  */
+.div_show
+{
+   display:block;
+}
+.div_hide
+{
+   display:none;
+}
